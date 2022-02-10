@@ -67,11 +67,13 @@ img {
   line-height: 1.142;
   letter-spacing: 0.02em;
   color: #212121;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .sub-navigation:hover,
 .sub-navigation:focus {
   color: var(--main-color);
 }
+
 /* .sub-navigation:active {
   color: var(--secondary-color);
 } */
@@ -79,23 +81,25 @@ img {
   cursor: pointer;
   list-style-type: none;
   display: flex;
-/*TEST BEFORE */
-  /* justify-content: center;
-  align-items: center;
-  flex-direction: row; */
 }
 .navigation-list:not(:last-child) {
   margin-right: 46px;
 }
-/* TEST BEFORE
-.navigation-list:first-child::before {
-  background-color: #303030;
-  content: "";
+.navigation-list {
+  position: relative;
+}
+.sub-navigation:hover::after {
+  position: absolute;
   display: block;
-  width: 50px;
-  height:10px;
-} */
-/* END TEST BEFORE */
+  content: "";
+  height: 4px;
+  width: 100%;
+  background-color: var(--main-color);
+  border-radius: 2px;
+  margin: 0;
+  padding: 0;
+  top: 46px;
+}
 
 /* === END NAVIGATION === */
 
@@ -122,6 +126,7 @@ img {
 .contacts-item:focus {
   color: var(--main-color);
   fill: var(--main-color);
+  /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 2500ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 /* .contacts-item:active {
   color: var(--secondary-color);
@@ -135,6 +140,11 @@ img {
 }
 .contact-icon {
   margin-right: 10px;
+}
+.icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* === END CONTACTS === */
 
@@ -222,8 +232,6 @@ img {
   /* which one use? */
   background-size: contain;
   /* object-fit: contain; */
-
-  /* object-position: 80px 0px; */
 }
 .big-title.bg-image {
   background-image: linear-gradient(
@@ -233,9 +241,6 @@ img {
     url("../images/bg.jpg");
     background-size: 100% 100%;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .btn {
   background: var(--main-color);
@@ -276,7 +281,6 @@ img {
 .section {
   padding: 94px 15px;
 }
-.description {}
 .images-four-times {
   padding-bottom: 30px;
 }
