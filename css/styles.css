@@ -496,10 +496,10 @@ transform: translateY(-100%);
   border-radius: 1px solid #EEE;
   cursor: pointer;
 }
+/* to catch the :hover from li --> photo-list */
 .photo-list:hover .show-up,
 .photo-list:focus .show-up {
   transform: translateY(-100%);
-
 }
 .nine-images.section {
   padding-top: 0px;
