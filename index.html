@@ -24,15 +24,15 @@
         <a href="#"></a>
         <nav>
             <ul class="navigation">
-                <li class="navigation-list"><a class="sub-navigation" href="index.html">Agencja</a></li>
+                <li class="navigation-list"><a class="sub-navigation first-element-nav" href="index.html">Agencja</a></li>
                 <li class="navigation-list"><a class="sub-navigation" href="portfolio.html">Portfolio</a></li>
-                <li class="navigation-list"><a class="sub-navigation" href="#">Kontakt</a></li>
+                <li class="navigation-list"><a class="sub-navigation third-element-nav">Kontakt</a></li>
             </ul>
         </nav>
             <div class="contacts">
                 <ul class="icon-envelope">
                     <li class="icon-list">
-                <a class="contacts-item" href="mailto:info@devstudio.com">
+                <a class="contacts-item " href="mailto:info@devstudio.com">
                     <svg class="contact-icon" width="16" height="12">
                         <use href="./images/icons.svg#icon-envelope"></use>
                     </svg>info@devstudio.com</a>
@@ -55,8 +55,9 @@
         <section class="big-title bg-image">
             <div class="container">
                 <h1 class="main-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+
                 <div class="btn-modal">
-                <button class="btn" type="button">Zamów usługę</button>
+                <button class="btn" type="button" data-modal-open>Zamów usługę</button>
                 </div>
             </div>
         </section>
@@ -126,9 +127,15 @@
             <h2 class="second-title"><span class="big-first-letter">czym </span>się zajmujemy</h2>
             <div>
                 <ul class="item-list">
-                    <li class="image-list"><img src="images/do/planning.jpg" alt="writing code on the keyboard" width="370" height="294"></li>
-                    <li class="image-list"><img src="images/do/mobility.jpg" alt="creating mobile applications" width="370" height="294"></li>
-                    <li class="image-list"><img src="images/do/details.jpg" alt="creating colorful projects" width="370" height="294"></li>
+                    <li class="image-list image-list-rel"><img src="images/do/planning.jpg" alt="writing code on the keyboard" width="370" height="294">
+                        <span class="image-list-content">aplikacje komputerowe</span>
+                    </li>
+                    <li class="image-list image-list-rel"><img src="images/do/mobility.jpg" alt="creating mobile applications" width="370" height="294">
+                        <span class="image-list-content">aplikacje mobilne</span>
+                    </li>
+                    <li class="image-list image-list-rel"><img src="images/do/details.jpg" alt="creating colorful projects" width="370" height="294">
+                        <span class="image-list-content">rozwiązania graficzne</span>
+                    </li>
                 </ul>
             </div>
             </div>
@@ -393,6 +400,19 @@
     </div>
     </div>
     </footer>
+
+
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>X</button>
+        <!-- <svg>
+            <use href="./images/vector"></use>
+        </svg> -->
+    </div>
+</div>
+
+<script src="./js/modal.js"></script>
+
 
 </body>
 </html>
