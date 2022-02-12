@@ -470,6 +470,7 @@ img {
 /* PHOTO-LIST */
 .photo-list {
   margin-bottom: 30px;
+  position: relative;
 
   max-width: 370px;
   height: auto;
@@ -489,9 +490,16 @@ transform: translateY(-100%);
 }
 .photo-list:hover, 
 .photo-list:focus {
+  position: relative; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   border-radius: 1px solid #EEE;
   cursor: pointer;
+}
+.photo-list:hover .show-up,
+.photo-list:focus .show-up {
+  transform: translateY(-100%);
+
 }
 .nine-images.section {
   padding-top: 0px;
