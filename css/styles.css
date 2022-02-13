@@ -283,8 +283,8 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   /* which one use? */
-  background-size: contain;
-  /* object-fit: contain; */
+  background-size: cover;
+  /* object-fit: cover; */
 }
 .big-title.bg-image {
   background-image: linear-gradient(
@@ -292,7 +292,6 @@ img {
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/bg.jpg");
-    background-size: 100% 100%;
     background-position: center;
 }
 .btn {
