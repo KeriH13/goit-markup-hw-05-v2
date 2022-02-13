@@ -246,7 +246,7 @@ img {
   display: flex;
   align-items: center;
   height: 80px;
-  padding: 24px auto;
+  /* padding: 24px; unnecessary? */
 }
 .container {
   width: 1200px;
@@ -492,7 +492,7 @@ transform: translateY(-100%);
   /* position: relative; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  border-radius: 1px solid #EEE;
+  border: 1px dotted #eee;
   cursor: pointer;
 }
 /* to catch the :hover from li --> photo-list */
@@ -588,24 +588,20 @@ transform: translateY(-100%);
   margin-bottom: 64px; /* margin-bottom: 30px have li */
 }
 /* === BUTTON GROUP === */
-.btn-first {
+.list-group:nth-child(4n+1) .btn-item{
   width: 121px;
   height: 38px;
 }
-.btn-second {
+.list-group:nth-child(2) .btn-item{
   width: 93px;
   height: 38px;
 }
-.btn-third {
+.list-group:nth-child(3) .btn-item{
   width: 114px;
   height: 38px;
 }
-.btn-fourth {
+.list-group:nth-child(4) .btn-item{
   width: 91px;
-  height: 38px;
-}
-.btn-fifth {
-  width: 121px;
   height: 38px;
 }
 .buttons-section {
