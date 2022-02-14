@@ -285,6 +285,7 @@ img {
   /* which one use? */
   background-size: cover;
   /* object-fit: cover; */
+  margin: 0 auto;
 }
 .big-title.bg-image {
   background-image: linear-gradient(
