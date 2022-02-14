@@ -861,6 +861,15 @@ footer {
   box-sizing: border-box;
   border-radius: 50%;
   cursor: pointer;
+
+  /* center "X" - 2 options center */
+  text-align: center;
+
+  /* OR */
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 .is-hidden {
   opacity: 0;
