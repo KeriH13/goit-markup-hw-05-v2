@@ -877,3 +877,9 @@ footer {
   pointer-events: none;
 }
 /* END BACKDROP */
+.modal__svg-icon {
+  display: inline-block;
+  background-image: url("../images/icon-x.svg");
+  width: 11px;
+  height: 11px;
+}
