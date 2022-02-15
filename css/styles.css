@@ -878,10 +878,9 @@ footer {
 }
 /* END BACKDROP */
 .modal__svg-icon {
-  display: flex;
-  background-image: url("../images/icon-x.svg");
+  display: inline-block;
+  background-image: url("../images/vector.svg");
   width: 11px;
   height: 11px;
-  justify-content: center;
-  align-items: center;
-} 
+  margin: auto;
+}
