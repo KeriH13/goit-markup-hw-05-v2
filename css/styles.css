@@ -878,10 +878,10 @@ footer {
 }
 /* END BACKDROP */
 .modal__svg-icon {
-  display: inline-flex;
+  display: flex;
   background-image: url("../images/icon-x.svg");
   width: 11px;
   height: 11px;
   justify-content: center;
-  transform: translate(-50%, -50%);
+  align-items: center;
 } 
