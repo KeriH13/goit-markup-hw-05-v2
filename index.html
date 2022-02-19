@@ -399,17 +399,35 @@
                 </li>
             </ul>
         </div>
+
+
+        <div class="footer__form-newsletter">
+            <form>
+                <p class="footer-icons-newsletter">zapisz się do newslettera</p>
+                <label for="email">
+                    <input type="email" id="email" placeholder="E-mail" required />
+                </label>
+                    <button class="btn" type="submit"><span>zapisz się</span>
+                        <svg class="footer__icon-newsletter">
+                            <use href="./images/icons.svg#send.svg"><use>
+                        </svg>
+                    </button>
+            </form>
+        </div>
+
+
     </div>
     </div>
     </footer>
-
+<!-- ADD SVG ICON "vector.svg" !!!!!!!!!!!!!!!!!!!!!!!!-->
 
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <button type="button" class="close-btn" data-modal-close><span class="modal__svg-icon"></span></button>
-        <!-- <svg>
-            <use href="./images/vector"></use>
-        </svg> -->
+        <button type="button" class="close-btn" data-modal-close><span class="modal__svg-icon"></span>
+        <svg class="vector-svg">
+            <use href="../images/icons.svg#icon-vector"></use>
+        </svg>
+        </button>
     </div>
 </div>
 
